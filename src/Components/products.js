@@ -1,10 +1,11 @@
 import React from 'react';
 
-const ProductCard = ({ image, title, rating }) => {
+const ProductCard = ({ image, title, price, rating }) => {
   return (
     <div className="product-card">
       <img src={image} alt="Product" className="product-img" />
       <div className="product-title">{title}</div>
+      <div className="product-price">₦{price}</div>
       <div className="product-rating">{generateStars(rating)}</div>
       <button className="add-to-cart">Add to Cart</button>
     </div>
